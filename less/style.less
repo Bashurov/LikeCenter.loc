@@ -1,0 +1,497 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">');
+
+@font-face {
+    font-family: 'MuseoCyrl100';
+    src: url('../fonts/MuseoCyrl-100.eot');
+    src: url('../fonts/MuseoCyrl-100.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-100.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-100.woff') format('woff'),
+        url('../fonts/MuseoCyrl-100.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-100.svg#MuseoCyrl-100') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoCyrl500';
+    src: url('../fonts/MuseoCyrl-500.eot');
+    src: url('../fonts/MuseoCyrl-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-500.woff') format('woff'),
+        url('../fonts/MuseoCyrl-500.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-500.svg#MuseoCyrl-500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoCyrl900';
+    src: url('../fonts/MuseoCyrl-900.eot');
+    src: url('../fonts/MuseoCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-900.woff') format('woff'),
+        url('../fonts/MuseoCyrl-900.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-900.svg#MuseoCyrl-900') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoCyrl700';
+    src: url('../fonts/MuseoCyrl-700.eot');
+    src: url('../fonts/MuseoCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoCyrl-700.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-700.svg#MuseoCyrl-700') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoCyrl300';
+    src: url('../fonts/MuseoCyrl-300.eot');
+    src: url('../fonts/MuseoCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoCyrl-300.ttf') format('truetype'),
+        url('../fonts/MuseoCyrl-300.svg#MuseoCyrl-300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mc100: 'MuseoCyrl100', sans-serif;
+@mc300: 'MuseoCyrl300', sans-serif;
+@mc500: 'MuseoCyrl500', sans-serif;
+@mc700: 'MuseoCyrl700', sans-serif;
+@mc900: 'MuseoCyrl900', sans-serif;
+
+@os-bold: 'OpenSans', sans-serif;
+
+/* Colors */
+@red: #ec5341;
+@light: #ffffff;
+@condition: #282e52;
+
+/* Basic setting */
+html {
+	font-size: 10px;
+}
+body {
+	font-family: @os-bold;
+	max-width: 160rem;
+	margin:0 auto;
+}
+button, input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+} 
+
+/* Typografphy */
+section {
+	padding: 5rem 0;
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+/* section header */
+.header {
+	height: 81.5rem;
+	background: @light url(../img/header/main-bg.jpg) no-repeat top  center;
+	.container {
+		max-width: 117rem;
+		.head {
+			height: 10rem;
+			.logo {
+				top: 55rem;
+				max-width: 15rem;
+			}
+			.phone {
+				&-block {
+					text-align: right;
+				}
+				&-link {
+					display: inline-block;
+					font-family: @mc500;
+					font-size: 1.6rem;
+					line-height: 4.5;
+					color: @light;
+					text-align: center;
+					img {
+						width: 2.4rem;
+						height: 2.4rem;
+						margin-right: 2rem;
+					}
+					&:hover {
+						cursor: pointer;
+						color: @red;
+					}
+				}
+			}
+			.wrap {
+				display: table;
+				width: 100%;
+				height: 7rem;
+				&-block {
+					display: table-cell;
+					text-align: right;
+					vertical-align: middle;
+				}
+				&-btn {
+					padding: 0.7rem 4.2rem; 
+					// width: 100%;
+					border: 2px solid @red;
+					background-color: Transparent;
+					border-radius: 5rem;
+					font-family: @mc500;
+					font-size: 1.4rem;
+					text-align: center;
+					color: @red;
+					transition: all 0.2s;
+					&:hover {
+						cursor: pointer;
+						background-color: @red;
+						color: @light;
+					}
+				}
+			}
+		}
+	}
+}
+/* content */
+.content {
+	color: @red;
+	margin-top: 6rem;
+	&-title{
+		h1 {
+			font-family: @mc700;
+			padding-top: 8rem;
+			font-size: 6rem;
+			letter-spacing: 0.21rem;
+			line-height: 0.533;
+			text-transform: uppercase;
+			color: @red;
+			text-align: left;
+		}
+		h3 {
+			font-family: @os-bold;
+			font-size: 3rem;
+			letter-spacing: 0.2rem;
+			line-height: 1.2;
+			margin: 4.5rem 0;
+			color: @light;
+			text-align: left;
+		}
+		hr {
+			border: 0.3rem solid @red;
+			width: 13.1rem;
+			float: left;
+		}
+		p {
+			font-family: @mc300;
+			color: @light;
+			margin: 1rem 0;
+			font-size: 1.8rem;
+			span {
+				color: @red;
+			}
+		}
+	}
+	&-form {
+		max-height: 69.2rem;
+		max-width: 53rem;
+		float: right;
+		background: @red url(../img/header/bg-form.jpg) no-repeat top right;
+		&-bg {
+			max-height: 69.2rem;
+			max-width: 53rem;
+			z-index: 2;
+			background-color: @red;
+			opacity: 0.9;
+			padding: 4.8rem 8rem;
+			h4 {
+				font-family: @mc900;
+				font-size: 2.6rem;
+				margin-bottom: 3rem;
+				color: @light;
+				text-align: center;
+			}
+			hr {
+				border: 0.17rem solid @light;
+				margin: 0;
+			}
+			.form {
+				label {
+					font-family: @mc500;
+					font-size: 1.4rem;
+					color: @light;
+					text-align: left;
+					margin-left: 1rem;
+				}
+				&-input {
+					display: block;
+					font-family: @mc300;
+					font-size: 1.4rem;
+					margin: 1rem 0;
+					width: 100%;
+					padding: 1.5rem 2.5rem;
+					border: none;
+					border-radius: 5rem;
+				}
+				&-btn {
+					width: 100%;
+					font-family: @mc700;
+					font-size: 2rem;
+					border: 2px solid @light;
+					background-color: Transparent;
+					padding: 1.5rem;
+					margin-top: 3rem;
+					border-radius: 5rem;
+					font-style: 1.2rem;
+					color: @light;
+					transition: all 0.2s;
+					&:hover {
+						cursor: pointer;
+						background-color: @light;
+						color: @red;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* icon */
+.icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  /*
+	&-chek-box-acsept {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: 0px 0px;
+	  width: 1600px;
+	  height: 6447px;
+	}
+	&-chek-box {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -1600px 0px;
+	  width: 1600px;
+	  height: 6447px;
+	}
+	*/
+	&-mark {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -3200px -40px;
+	  width: 16px;
+	  height: 13px;
+	}
+	/*
+	&-phone {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -3200px 0px;
+	  width: 24px;
+	  height: 24px;
+	  margin: 2rem;
+	}
+	*/
+	&-right {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -3200px -24px;
+	  width: 15px;
+	  height: 16px;
+	}
+}
+
+/* checkbox */
+.checkbox {
+	position:relative;
+	padding-left: 1rem;
+	margin-top: 3rem;
+	font-family: @mc500;
+	font-size: 1.4rem;
+	span {
+		color: @condition;
+		cursor: pointer;
+	}
+	input[type=checkbox] {
+		display:none;
+	}
+	label:after {
+		content:'';
+		height:1.3rem;
+		width:1.3rem;
+		outline:1px solid @light;
+		position:absolute;
+		top: 0.5rem;
+		left:0;
+	}
+	input[type=checkbox]:checked + label:after{
+		content: '\2713';
+		font-size: 1rem;
+		text-align: center;
+    line-height: 1.4rem;
+	}
+}
+
+/* Modal windows */
+.popup, .popup-condition {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	&-content {
+		position: fixed;
+		left: 50%;
+		top: 5%;
+		transform: translateX(-50%);
+	}
+	&-close {
+		position: absolute;
+		right: -2.3rem;
+		text-align: center;
+		font-size: 1.5rem;
+		background-color: @light;
+		border: none;
+		// border-radius: 5rem;
+		color: @red;
+	}
+}
+.popup .content-form {
+	max-height: 60rem;
+	max-width: 40rem;
+	text-align: center;
+	&-bg {
+		max-height: 60rem;
+		max-width: 40rem;
+		padding: 4rem;
+		h4 {
+			margin: 1rem 0;
+		}
+		.form-input {
+			margin: 0.5rem 0;
+			width: 100%;
+			padding: 1.5rem;
+		}
+	}
+}	
+.popup-condition .text {
+	max-height: 60rem;
+	max-width: 800rem;
+	background-color: @light;
+	overflow-y: scroll;
+	padding: 2rem;
+	p {
+		font-family: @mc300;
+		color: #000000;
+		font-size: 1.5rem;
+	}
+}
+/* media */
+/* media  .col-xl-  1200---px*/
+/* large  .col-lg-  992-1199px*/
+@media (max-width: 1199px) {
+ 	section {
+    padding: 3rem;
+	}
+	.content {
+		margin-top: 0;
+	} 
+	.content-title h1, .content-title h3,  .content-title p {
+		// text-align: center;
+		line-height: 1.2;
+	}
+	.content-title h1 {
+		font-size: 5rem;
+	}
+}
+
+/* medium .col-md-  768-991px*/
+@media (max-width: 991px) {
+ 	.content-title h1, .content-title h3,  .content-title p {
+		text-align: center;
+		line-height: 1.2;
+	}
+	.content-title h1 {
+		font-size: 4rem;
+	}
+	.content-title h3 {
+		margin: 2rem 0;
+		font-size: 2rem;
+	}
+	.content-title hr {
+		float: none;
+	}
+	.content-form {
+		float: none;
+		
+		margin: 2rem auto;
+	}
+	.content-form-bg {
+		padding: 2rem 4rem;
+	}
+	.content-form-bg h4 {
+		font-size: 2rem;
+	}
+}
+ 	
+
+
+
+/* small  .col-sm-  576-767px*/
+@media (max-width: 767px) {
+	.head {
+	 		text-align: center;
+	}
+	.header .container .head .phone-block {
+    text-align: center;
+	}
+	.header .container .head .wrap-block {
+    text-align: center;
+	}
+	.content {
+		margin-top: 2rem;
+	} 
+	.content-title h1, .content-title h3,  .content-title p {
+		text-align: center;
+		line-height: 1.2;
+	}
+	.content-title h1 {
+		font-size: 4rem;
+	}
+	.content-title h3 {
+		margin: 2rem 0;
+		font-size: 2rem;
+	}
+	.content-title hr {
+		float: none;
+	}
+	.content-form {
+		float: none;
+		
+		margin: 2rem auto;
+	}
+	.content-form-bg {
+		padding: 2rem 4rem;
+	}
+	.content-form-bg h4 {
+		font-size: 2rem;
+	}
+}
+/* extra-small  .col-  ---575px*/
+ @media (max-width: 575px) {
+ 	.header .container .head .wrap-block {
+   display: none;
+	}
+	.header .container .head .phone-link {
+		font-size: 2.5rem;
+	}
+ 	
+}

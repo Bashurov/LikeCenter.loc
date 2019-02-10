@@ -1,0 +1,453 @@
+/* Fonts */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'MuseoCyrl100';
+  src: url('../fonts/MuseoCyrl-100.eot');
+  src: url('../fonts/MuseoCyrl-100.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-100.woff2') format('woff2'), url('../fonts/MuseoCyrl-100.woff') format('woff'), url('../fonts/MuseoCyrl-100.ttf') format('truetype'), url('../fonts/MuseoCyrl-100.svg#MuseoCyrl-100') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoCyrl500';
+  src: url('../fonts/MuseoCyrl-500.eot');
+  src: url('../fonts/MuseoCyrl-500.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-500.woff2') format('woff2'), url('../fonts/MuseoCyrl-500.woff') format('woff'), url('../fonts/MuseoCyrl-500.ttf') format('truetype'), url('../fonts/MuseoCyrl-500.svg#MuseoCyrl-500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoCyrl900';
+  src: url('../fonts/MuseoCyrl-900.eot');
+  src: url('../fonts/MuseoCyrl-900.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-900.woff2') format('woff2'), url('../fonts/MuseoCyrl-900.woff') format('woff'), url('../fonts/MuseoCyrl-900.ttf') format('truetype'), url('../fonts/MuseoCyrl-900.svg#MuseoCyrl-900') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoCyrl700';
+  src: url('../fonts/MuseoCyrl-700.eot');
+  src: url('../fonts/MuseoCyrl-700.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-700.woff2') format('woff2'), url('../fonts/MuseoCyrl-700.woff') format('woff'), url('../fonts/MuseoCyrl-700.ttf') format('truetype'), url('../fonts/MuseoCyrl-700.svg#MuseoCyrl-700') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoCyrl300';
+  src: url('../fonts/MuseoCyrl-300.eot');
+  src: url('../fonts/MuseoCyrl-300.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoCyrl-300.woff2') format('woff2'), url('../fonts/MuseoCyrl-300.woff') format('woff'), url('../fonts/MuseoCyrl-300.ttf') format('truetype'), url('../fonts/MuseoCyrl-300.svg#MuseoCyrl-300') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'OpenSans', sans-serif;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+/* Typografphy */
+section {
+  padding: 5rem 0;
+}
+section a:hover {
+  text-decoration: none;
+}
+/* section header */
+.header {
+  height: 81.5rem;
+  background: #ffffff url(../img/header/main-bg.jpg) no-repeat top center;
+}
+.header .container {
+  max-width: 117rem;
+}
+.header .container .head {
+  height: 10rem;
+}
+.header .container .head .logo {
+  top: 55rem;
+  max-width: 15rem;
+}
+.header .container .head .phone-block {
+  text-align: right;
+}
+.header .container .head .phone-link {
+  display: inline-block;
+  font-family: 'MuseoCyrl500', sans-serif;
+  font-size: 1.6rem;
+  line-height: 4.5;
+  color: #ffffff;
+  text-align: center;
+}
+.header .container .head .phone-link img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 2rem;
+}
+.header .container .head .phone-link:hover {
+  cursor: pointer;
+  color: #ec5341;
+}
+.header .container .head .wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.header .container .head .wrap-block {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+.header .container .head .wrap-btn {
+  padding: 0.7rem 4.2rem;
+  border: 2px solid #ec5341;
+  background-color: Transparent;
+  border-radius: 5rem;
+  font-family: 'MuseoCyrl500', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ec5341;
+  transition: all 0.2s;
+}
+.header .container .head .wrap-btn:hover {
+  cursor: pointer;
+  background-color: #ec5341;
+  color: #ffffff;
+}
+/* content */
+.content {
+  color: #ec5341;
+  margin-top: 6rem;
+}
+.content-title h1 {
+  font-family: 'MuseoCyrl700', sans-serif;
+  padding-top: 8rem;
+  font-size: 6rem;
+  letter-spacing: 0.21rem;
+  line-height: 0.533;
+  text-transform: uppercase;
+  color: #ec5341;
+  text-align: left;
+}
+.content-title h3 {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+  margin: 4.5rem 0;
+  color: #ffffff;
+  text-align: left;
+}
+.content-title hr {
+  border: 0.3rem solid #ec5341;
+  width: 13.1rem;
+  float: left;
+}
+.content-title p {
+  font-family: 'MuseoCyrl300', sans-serif;
+  color: #ffffff;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+.content-title p span {
+  color: #ec5341;
+}
+.content-form {
+  max-height: 69.2rem;
+  max-width: 53rem;
+  float: right;
+  background: #ec5341 url(../img/header/bg-form.jpg) no-repeat top right;
+}
+.content-form-bg {
+  max-height: 69.2rem;
+  max-width: 53rem;
+  z-index: 2;
+  background-color: #ec5341;
+  opacity: 0.9;
+  padding: 4.8rem 8rem;
+}
+.content-form-bg h4 {
+  font-family: 'MuseoCyrl900', sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  text-align: center;
+}
+.content-form-bg hr {
+  border: 0.17rem solid #ffffff;
+  margin: 0;
+}
+.content-form-bg .form label {
+  font-family: 'MuseoCyrl500', sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 1rem;
+}
+.content-form-bg .form-input {
+  display: block;
+  font-family: 'MuseoCyrl300', sans-serif;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 5rem;
+}
+.content-form-bg .form-btn {
+  width: 100%;
+  font-family: 'MuseoCyrl700', sans-serif;
+  font-size: 2rem;
+  border: 2px solid #ffffff;
+  background-color: Transparent;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 5rem;
+  font-style: 1.2rem;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.content-form-bg .form-btn:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #ec5341;
+}
+/* icon */
+.icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  /*
+	&-chek-box-acsept {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: 0px 0px;
+	  width: 1600px;
+	  height: 6447px;
+	}
+	&-chek-box {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -1600px 0px;
+	  width: 1600px;
+	  height: 6447px;
+	}
+	*/
+  /*
+	&-phone {
+	  background-image: url(../img/header/sprite.png);
+	  background-position: -3200px 0px;
+	  width: 24px;
+	  height: 24px;
+	  margin: 2rem;
+	}
+	*/
+}
+.icon-mark {
+  background-image: url(../img/header/sprite.png);
+  background-position: -3200px -40px;
+  width: 16px;
+  height: 13px;
+}
+.icon-right {
+  background-image: url(../img/header/sprite.png);
+  background-position: -3200px -24px;
+  width: 15px;
+  height: 16px;
+}
+/* checkbox */
+.checkbox {
+  position: relative;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  font-family: 'MuseoCyrl500', sans-serif;
+  font-size: 1.4rem;
+}
+.checkbox span {
+  color: #282e52;
+  cursor: pointer;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}
+.checkbox label:after {
+  content: '';
+  height: 1.3rem;
+  width: 1.3rem;
+  outline: 1px solid #ffffff;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+  content: '\2713';
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+/* Modal windows */
+.popup,
+.popup-condition {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.popup-content,
+.popup-condition-content {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.popup-close,
+.popup-condition-close {
+  position: absolute;
+  right: -2.3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  border: none;
+  color: #ec5341;
+}
+.popup .content-form {
+  max-height: 60rem;
+  max-width: 40rem;
+  text-align: center;
+}
+.popup .content-form-bg {
+  max-height: 60rem;
+  max-width: 40rem;
+  padding: 4rem;
+}
+.popup .content-form-bg h4 {
+  margin: 1rem 0;
+}
+.popup .content-form-bg .form-input {
+  margin: 0.5rem 0;
+  width: 100%;
+  padding: 1.5rem;
+}
+.popup-condition .text {
+  max-height: 60rem;
+  max-width: 800rem;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  padding: 2rem;
+}
+.popup-condition .text p {
+  font-family: 'MuseoCyrl300', sans-serif;
+  color: #000000;
+  font-size: 1.5rem;
+}
+/* media */
+/* media  .col-xl-  1200---px*/
+/* large  .col-lg-  992-1199px*/
+@media (max-width: 1199px) {
+  section {
+    padding: 3rem;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .content-title h1,
+  .content-title h3,
+  .content-title p {
+    line-height: 1.2;
+  }
+  .content-title h1 {
+    font-size: 5rem;
+  }
+}
+/* medium .col-md-  768-991px*/
+@media (max-width: 991px) {
+  .content-title h1,
+  .content-title h3,
+  .content-title p {
+    text-align: center;
+    line-height: 1.2;
+  }
+  .content-title h1 {
+    font-size: 4rem;
+  }
+  .content-title h3 {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  .content-title hr {
+    float: none;
+  }
+  .content-form {
+    float: none;
+    margin: 2rem auto;
+  }
+  .content-form-bg {
+    padding: 2rem 4rem;
+  }
+  .content-form-bg h4 {
+    font-size: 2rem;
+  }
+}
+/* small  .col-sm-  576-767px*/
+@media (max-width: 767px) {
+  .head {
+    text-align: center;
+  }
+  .header .container .head .phone-block {
+    text-align: center;
+  }
+  .header .container .head .wrap-block {
+    text-align: center;
+  }
+  .content {
+    margin-top: 2rem;
+  }
+  .content-title h1,
+  .content-title h3,
+  .content-title p {
+    text-align: center;
+    line-height: 1.2;
+  }
+  .content-title h1 {
+    font-size: 4rem;
+  }
+  .content-title h3 {
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+  .content-title hr {
+    float: none;
+  }
+  .content-form {
+    float: none;
+    margin: 2rem auto;
+  }
+  .content-form-bg {
+    padding: 2rem 4rem;
+  }
+  .content-form-bg h4 {
+    font-size: 2rem;
+  }
+}
+/* extra-small  .col-  ---575px*/
+@media (max-width: 575px) {
+  .header .container .head .wrap-block {
+    display: none;
+  }
+  .header .container .head .phone-link {
+    font-size: 2.5rem;
+  }
+}
